@@ -1,0 +1,34 @@
+{
+  "name": "Ecommerce Homepage",
+  "short_name": "Ecommerce",
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#007bff",
+  "background_color": "#ffffff",
+  "icons": [
+    {
+      "src": "images/Jordans1.jpeg",
+      "type": "image/png",
+      "sizes": "225x225"
+    },
+    {
+      "src": "images/Jordans2.jpeg",
+      "type": "image/png",
+      "sizes": "225x225"
+    },
+    {
+      "src": "images/Jordans3.jpeg",
+      "type": "image/png",
+      "sizes": "225x225"
+    }
+  ],
+  "description": "Homepage for our Ecommerce store.",
+  "categories": ["shopping", "business"],
+  "prefer_related_applications": false,
+  "related_applications": [],
+  "scope": "/",
+  "serviceworker": {
+    "src": "path/to/serviceworker.js",
+    "use_cache": true
+  }
+}
