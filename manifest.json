@@ -14,21 +14,40 @@
     {
       "src": "images/Jordans2.jpeg",
       "type": "image/png",
-      "sizes": "225x225"
+      "sizes": "225x225",
+      "purpose": "any maskable"
     },
     {
       "src": "images/Jordans3.jpeg",
       "type": "image/png",
-      "sizes": "225x225"
+      "sizes": "225x225",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "images/Jordans5.jpeg",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "images/HomeHero.jpeg",
+      "type": "image/png",
+      "sizes": "1280x1280",
+      "purpose": "any maskable"
     }
   ],
+  "splash": {
+    "imagePath": "images/splash.png",
+    "backgroundColor": "#ffffff",
+    "resizeMode": "cover"
+  },
   "description": "Homepage for our Ecommerce store.",
   "categories": ["shopping", "business"],
   "prefer_related_applications": false,
   "related_applications": [],
   "scope": "/",
   "serviceworker": {
-    "src": "path/to/serviceworker.js",
+    "src": "serviceworker.js",
     "use_cache": true
   }
 }

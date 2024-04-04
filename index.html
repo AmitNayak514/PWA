@@ -3,13 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#007bff" />
     <title>Ecommerce Homepage</title>
     <link rel="stylesheet" href="styles.css" />
     <link rel="manifest" href="manifest.json" />
   </head>
   <body>
     <header>
-      <h1>Welcome to Our Store</h1>
+      <h1>Crepdog Crew</h1>
       <nav>
         <ul>
           <li><a href="#">Home</a></li>
@@ -19,6 +20,13 @@
         </ul>
       </nav>
     </header>
+
+    <section class="home-hero">
+      <div class="hero-text">
+        <h2>Welcome to Crepdog Crew</h2>
+        <p>Your ultimate destination for premium sneakers</p>
+      </div>
+    </section>
 
     <main>
       <section class="featured-products">
@@ -34,22 +42,22 @@
     </footer>
 
     <script src="script.js">
-          window.addEventListener('load', () => {
-        registerSW();
+      window.addEventListener('load', () => {
+      registerSW();
       });
 
       // Register the Service Worker
       async function registerSW() {
-        if ('serviceWorker' in navigator) {
-          try {
-            await navigator
-                  .serviceWorker
-                  .register('serviceworker.js');
-          }
-          catch (e) {
-            console.log('SW registration failed');
-          }
-        }
+      if ('serviceWorker' in navigator) {
+      try {
+      await navigator
+      .serviceWorker
+      .register('serviceworker.js');
+      }
+      catch (e) {
+      console.log('SW registration failed');
+      }
+      }
       }
     </script>
   </body>
